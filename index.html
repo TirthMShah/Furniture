@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="image/Home_Page-Images/hh 02.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Harmony</title>
+
+  <!-- Libraries Stylesheet -->
+  <script src="https://kit.fontawesome.com/93bf66ba93.js" crossorigin="anonymous"></script>
+  <link href="/furniture/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <script type="module" crossorigin src="/furniture/assets/index-DsfdmjKy.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script src="/furniture/js/app.js"></script>
+  <script src="/furniture/js/navbar_js.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+  <script src="/furniture/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+      // loop:true,
+      margin: 10,
+      nav: true,
+      // autoplay:true,
+      autoplayTimeout: 1000,
+      stagePadding: 10,
+      dots: false,
+
+      navText: [
+        "<i class='fas fa-chevron-left'></i>",
+        "<i class='fas fa-chevron-right'></i>",
+      ],
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 3,
+        },
+        1000: {
+          items: 4,
+        },
+      },
+    });
+  </script>
+</body>
+
+</html>

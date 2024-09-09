@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  /* Custom styles for carousel controls */
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 5%;
+    /* Adjust the width as needed */
+    text-align: center;
+  }
+
+  /* Position the "prev" control at the left end */
+  .carousel-control-prev {
+    left: 0;
+  }
+
+  /* Position the "next" control at the right end */
+  .carousel-control-next {
+    right: 0;
+  }
+
+  /* Adjust the icon size if needed */
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 2rem;
+    /* Adjust the size as needed */
+    height: 2rem;
+  }
+  .owl-next {
+    position: absolute;
+    top: 140px;
+    right: 10px;
+    font-size: 24px !important;
+    color: aliceblue;
+    border-radius: 100% !important;
+  }
+
+  .owl-prev {
+    position: absolute;
+    top: 140px;
+    left: 10px;
+    font-size: 24px !important;
+    color: aliceblue;
+    border-radius: 100% !important;
+  }
+
+  .carousel-container {
+    background-image: url("Home_Page-Images/2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+    border: 0.1px solid white;
+  }
+
+  .carousel {
+    margin: 0%;
+  }
+
+  .bigphoto {
+    width: 100%;
+  }
+
+  .sidebyside {
+    width: 50%;
+    flex-shrink: 0;
+  }
+
+  .bigphoto-container {
+    display: flex;
+    /* Use flexbox to align images side by side */
+    overflow: hidden;
+    /* Hide the horizontal scrollbar */
+  }
+
+  .animate:hover {
+    transform: scale(1.1, 1.1);
+    /* padding: 20px; */
+    transition: all;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+    transition-delay: 10ms;
+  }
+
+  .item_container {
+    background-image: url("Home_Page-Images/2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0%;
+    border: 0.1px solid white;
+  }
+
+  .equal-spacing {
+    /* margin: 30px !important; */
+    /* margin-left: 7px !important; */
+    padding: 45px !important;
+  }
+
+  .equal-spacing .col {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .equal-spacing img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 576px) {
+    .equal-spacing .col {
+      font-size: 1.2rem;
+      /* Adjust the font size for small devices (576px and up) */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .equal-spacing .col {
+      font-size: 1.4rem;
+      /* Adjust the font size for medium devices (768px and up) */
+    }
+  }
+
+  @media (min-width: 992px) {
+    .equal-spacing .col {
+      font-size: 1.6rem;
+      /* Adjust the font size for large devices (992px and up) */
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .equal-spacing .col {
+      font-size: 1.8rem;
+      /* Adjust the font size for extra-large devices (1200px and up) */
+    }
+  }
+
+  .main-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .image-container {
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .image-container img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+  .text-overlay {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(0, 0, 0);
+    width: 80%;
+  }
+  .text-overlay p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .shop-now-button {
+    background-color: #0b0c0b;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin-top: 10px; */
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 768px) {
+    .image-container {
+      width: 100%;
+      color: rgb(rgb(241, 194, 124));
+    }
+  }
+  .cart-div {
+    position: relative;
+  }
+  .cart-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border-radius: 50%;
+    color: #fff;
+    top: 50%;
+    right: -20px;
+    font-size: 15px;
+  }
+
+  .item a{
+    text-decoration: none;
+    color: #212529;
+  }
+  .navbar-toggler{
+    order: 5;
+  }
+  @media screen and (max-width:460px) {
+    .navbar-toggler{
+      order: 0;
+    }
+  }
+  .custom-toggler {
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    z-index: 9999; /* Ensure it stays on top */
+  }
